@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reddit Image Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Reddit Image Viewer</h1>
+
+    <div>
+      <div class="filter">
+        <button type="button">All Images</button>
+        <button type="button" data-btn="1">Animals</button>
+        <button type="button" data-btn="2">Nature</button>
+        <button type="button" data-btn="3">Architecture</button>
+
+
+      </div>
+
+    </div>
+
+    <div class="search">
+      <input type="text" id="search-input" placeholder="Search for images...">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <div class="filter">
+      <label for="layout-select">Layout:</label>
+      <button type="button"><a href="kosstask.html" style="text-decoration:none">Grid view</a></button>
+      <button type="button"><a href="kosstaskcarousel.html" style="text-decoration:none">Carousel view</a></button>
+
+
+    </div>
+  </header>
+
+  <div class="container">
+    <h1>Image Gallery</h1>
+    <div class="main">
+      <div class="image"><img src="https://i.redd.it/xpvrzusx7jxa1.jpg" data-img="1"></div>
+      <div class="image" data-name="tiger"><img src="https://i.imgur.com/wvEVnor.jpg" data-img="1"></div>
+      <div class="image" data-name="lion"><img src="https://i.redd.it/8n9zpx9h0t101.jpg" data-img="1"></div>
+      <div class="image" data-name="zebra"><img src="https://i.redd.it/i4v82qf99jt51.jpg" data-img="1"></div>
+      <div class="image" data-name="giraffes"><img src="https://i.redd.it/v53v9vyqfib41.jpg" data-img="1"></div>
+      <div class="image" data-name="Elephant"><img src="https://i.redd.it/v2vqh2705zg91.jpg" data-img="1"></div>
+      <div class="image" data-name="kangaroo"><img src="https://i.redd.it/a6j9z61lab8a1.jpg" data-img="1"></div>
+      <div class="image" data-name="snake"><img src="https://i.redd.it/ogm4ehp0e30a1.png" data-img="1"></div>
+      <div class="image" data-name="crocodile"><img src="https://i.redd.it/cq6in216pdoa1.jpg" data-img="1"></div>
+      <div class="image" data-name="polar bear"><img src="https://i.redd.it/0spe4w8b06la1.jpg" data-img="1"></div>
+
+      <div class="image" data-name="Autumn"><img src="https://i.redd.it/8m66x8ahke361.jpg" data-img="2"></div>
+      <div class="image" data-name="autumn"><img src="https://i.redd.it/brzen5trdhi41.jpg" data-img="2"></div>
+      <div class="image" data-name="Winter"><img src="https://i.redd.it/aihm31jh9m211.jpg" data-img="2"></div>
+      <div class="image" data-name="forest"><img src="https://i.redd.it/r2o9qorvh8d71.jpg" data-img="2"></div>
+      <div class="image" data-name="Sunset"><img src="https://i.redd.it/lijj1r09atza1.jpg" data-img="2"></div>
+      <div class="image" data-name="lightning"><img src="https://i.redd.it/ul4eqhqv3fxa1.png" data-img="2"></div>
+      <div class="image" data-name="aurora"><img src="https://i.redd.it/0y8rrpvti7m61.jpg" data-img="2"></div>
+      <div class="image" data-name="flowers"><img src="https://i.redd.it/0eksvxkzdez21.jpg" data-img="2"></div>
+      <div class="image" data-name="cherryblossom"><img src="https://i.redd.it/ai5rwq9l8gza1.jpg" data-img="2"></div>
+      <div class="image" data-name="grand canyon"><img src="https://i.redd.it/1uee4x4m2kma1.jpg" data-img="2"></div>
+
+      <div class="image" data-name="Tajmahal"><img src="https://i.redd.it/5uwjijyszpy71.jpg" data-img="3"></div>
+      <div class="image" data-name="victoria memorial"><img src="https://i.redd.it/1h6czs2ipge41.jpg" data-img="3">
+      </div>
+      <div class="image" data-name="burjkhalifa"><img src="https://i.redd.it/3rihzxcrisia1.jpg" data-img="3"></div>
+      <div class="image" data-name="sydney"><img src="https://i.redd.it/0hzimb6z1tva1.jpg" data-img="3"></div>
+      <div class="image" data-name="lotustemple"><img src="https://i.redd.it/owknc8uyhli61.jpg" data-img="3"></div>
+      <div class="image" data-name="chateau france"><img src="https://i.redd.it/elm73ew4psza1.jpg" data-img="3"></div>
+      <div class="image" data-name="Gardensbybay"><img src="https://i.redd.it/4sz8om0zyoda1.jpg" data-img="3"></div>
+      <div class="image" data-name="disneyconcert"><img src="https://i.redd.it/4iehquymmdo41.jpg" data-img="3"></div>
+      <div class="image" data-name="viennachurch"><img src="https://i.redd.it/zrwygmbhfoca1.jpg" data-img="3"></div>
+      <div class="image" data-name="rajasthan"><img src="https://i.redd.it/7tp3d4y10b3a1.jpg" data-img="3"></div>
+    </div>
+
+    <div class="popup-image">
+      <span>&times;</span>
+      <img src="https://i.redd.it/xpvrzusx7jxa1.jpg" alt="monkey">
+    </div>
+
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

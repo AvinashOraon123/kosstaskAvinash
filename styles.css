@@ -1,0 +1,193 @@
+/* Reset some default styles */
+
+
+body {
+  background-image: url("https://i.redd.it/upg7qlc1afc91.jpg");
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+
+  background-image: url('https://i.redd.it/1bd965y6j71b1.jpg');
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.filter,
+.search,
+.layout {
+  margin-bottom: 10px;
+}
+.filter{
+  padding:15px 0px;
+}
+.filter button{
+  margin-right:5px;
+  text-decoration: none;
+  border:1px solid #ccc;
+  padding: 10px 25px;
+  border-radius:50px;
+  color: #e74c3c;
+  transition: 0.3s;
+}
+.filter button:hover,
+.filter .btn-clicked{
+  background: #fff;
+  color:#111;
+}
+
+
+.filter a.active{
+  background-color:#e74c3c ;
+ border-color: #e74c3c;
+  color: #fff;
+
+}
+/*classes for js*/
+.container .main .image .img-expand{
+  width: 25em;
+  margin:1em;
+}
+.container .main .image .img-shrink{
+  width:0em;
+  margin:-1em;
+}
+@media screen and(max-width:1439px){
+ .images{
+  max-width:895px;
+
+ } 
+}
+@media screen and(max-width:986px){
+  .container .main .image{
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .main .image{
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and(max-width:600px){
+  .filter button{
+    width:100%;
+    display:block;
+  }
+  .container .main .image
+  .img-expand,
+  .container .main .image img{
+    width:100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container{
+  position: relative;
+  min-height: 100vh;
+  background: #ddd
+}
+.container h1 {
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  padding: 15px;
+  color: #333;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container .main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/*.container .main .image {
+  width: 300px;
+  height: 300px;
+  border: 10px solid #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: contain;
+  object-position: center;
+}*/
+
+.container .main .image img {
+  width: 300px;
+  height: 300px;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  object-position: center;
+
+  object-fit: cover;
+  transition: .2s linear;
+}
+
+
+.container .main .image:hover img{
+  transform: scale(1.1);
+}
+.container .popup-image{
+  position:fixed;
+  top:0; left:0;
+  background:rgba(0, 0, 0, 0.9);
+  height: 100%;
+  width:100%;
+  z-index:100;
+  display: none;
+
+}
+
+.container .popup-image span{
+  position: absolute;
+  top:0; right:10px;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #fff;
+  cursor:pointer;
+  z-index: 100;
+}
+
+.container .popup-image img{
+  position: absolute;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  border:5px solid #fff;
+  border-radius: 5px;
+  width:750px;
+  object-fit:cover;
+}
+
+@media (max-width:768px){
+  .container .popup-image img{
+    width:95%;
+  }
+}
+
+
+
